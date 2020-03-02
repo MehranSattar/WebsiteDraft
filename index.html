@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/eef367b7e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="logo">
+          <a class="icon" href="#"><i class="fas fa-arrow-right"></i></a>
+        </li>
+        <li class="nav-links" onclick="overlay()">
+          <a href="#">Maths</a>
+        </li>
+        <li class="nav-links" onclick="overlay()">
+          <a href="#">Further Maths</a>
+        </li>
+        <li class="nav-links" onclick="overlay()">
+          <a href="#">Computer Science</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>This is our Logo</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eaque
+        iste ad labore numquam, incidunt mollitia ullam, nostrum officiis est
+        excepturi obcaecati, officia ut maiores reiciendis beatae quod
+        perferendis repellendus quas asperiores pariatur explicabo suscipit rem?
+        Tempora explicabo perferendis iusto!
+      </p>
+      <div id="myNav" class="overlay active">
+        <a onclick="overlay();" id="icon-two">&times;</a>
+        <div class="overlay-content">
+          <div class="overlay-content-core">
+            <a onclick="overlay(); example()" class="main" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+          </div>
+          <div class="overlay-content-stats">
+            <a onclick="overlay()" class="main" href="#">Statistics</a>
+            <a onclick="overlay()" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+          </div>
+          <div class="overlay-content-mech">
+            <a onclick="overlay()" class="main" href="#">Mechanics</a>
+            <a onclick="overlay()" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+            <a onclick="overlay()" href="#">Core</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>
